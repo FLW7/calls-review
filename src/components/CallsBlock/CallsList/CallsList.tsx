@@ -106,7 +106,13 @@ const CallsList: FC = () => {
                         <th className={cl.callsTable__head}>Звонок</th>
                         <th className={cl.callsTable__head}>Источник</th>
                         <th className={cl.callsTable__head}>Оценка</th>
-                        <th className={cl.callsTable__head}>
+                        <th
+                            className={cl.callsTable__head}
+                            style={{
+                                display: "flex",
+                                justifyContent: "flex-end",
+                            }}
+                        >
                             <div
                                 className={cl["callsTable__head--withArrow"]}
                                 onClick={handleDurationSort}

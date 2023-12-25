@@ -23,6 +23,10 @@ const AudioPlayer: FC<AudioPlayerProps> = memo(
                 pause();
                 setIsPlaying(false);
             }
+            return () => {
+                pause();
+                setIsPlaying(false);
+            };
         }, [activeTrack, play, pause, trackId]);
 
         const playingButton = () => {
