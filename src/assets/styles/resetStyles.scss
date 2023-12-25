@@ -1,0 +1,87 @@
+// @font-face {
+//     font-family: "SFProDisplay";
+//     src: url("../fonts/SFProDisplay/SF-Pro-Display-Ultralight.otf")
+//         format("opentype");
+//     font-weight: lighter, 200;
+// }
+// @font-face {
+//     font-family: "SFProDisplay";
+//     src: url("../fonts/SFProDisplay/SF-Pro-Display-Light.otf")
+//         format("opentype");
+//     font-weight: light, 300;
+// }
+@font-face {
+    font-family: "SFProDisplay";
+    src: url("../fonts/SFProDisplay/SF-Pro-Display-Regular.otf")
+        format("opentype");
+    font-weight: normal, 400;
+}
+// @font-face {
+//     font-family: "SFProDisplay";
+//     src: url("../fonts/SFProDisplay/SF-Pro-Display-Semibold.otf")
+//         format("opentype");
+//     font-weight: bold, 500;
+// }
+// @font-face {
+//     font-family: "SFProDisplay";
+//     src: url("../fonts/SFProDisplay/SF-Pro-Display-Bold.otf") format("opentype");
+//     font-weight: bolder, 600;
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: inherit;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "SFProDisplay", sans-serif !important;
+}
+
+button {
+    box-sizing: border-box !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000000s ease-in-out 0s;
+    -webkit-text-fill-color: inherit !important;
+    caret-color: inherit;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

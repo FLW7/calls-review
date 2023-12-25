@@ -1,0 +1,21 @@
+.item {
+    cursor: pointer;
+    width: max-content;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--text-header);
+    &:hover {
+        color: var(--text-black);
+        background: var(--light-blue);
+    }
+    &::first-letter {
+        text-transform: uppercase;
+    }
+    &.selected {
+        color: var(--UI-accent);
+    }
+}

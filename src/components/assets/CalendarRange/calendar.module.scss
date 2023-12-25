@@ -1,0 +1,9 @@
+.calendar {
+    background-color: #fff;
+    color: black;
+    border: unset;
+    height: 28px;
+    &::placeholder {
+        color: var(--UI-Icon, #adbfdf);
+    }
+}

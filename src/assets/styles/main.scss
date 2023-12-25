@@ -1,0 +1,62 @@
+button,
+a {
+    all: unset;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #f1f4f9;
+    overflow: overlay;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--UI-secondary);
+        border-radius: 20px;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.disable-scroll {
+    overflow: hidden !important;
+}
+
+.clearIcon {
+    display: block;
+    width: 17px;
+    height: 17px;
+    transition: 0.3s;
+    background-color: unset;
+    background-size: 17px;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_70636_37018-674590)'%3E%3Cpath d='M8.37451 0.281006C12.7928 0.281006 16.3745 3.86273 16.3745 8.28101C16.3745 12.6993 12.7928 16.281 8.37451 16.281C3.95623 16.281 0.374512 12.6993 0.374512 8.28101C0.374512 3.86273 3.95623 0.281006 8.37451 0.281006ZM10.8402 4.54123L8.37451 7.00801L5.91021 4.54123C5.55874 4.18976 4.98889 4.18976 4.63742 4.54123C4.28595 4.8927 4.28595 5.46255 4.63742 5.81402L7.10251 8.28201L4.63742 10.751C4.28595 11.1025 4.28595 11.6723 4.63742 12.0238C4.98889 12.3753 5.55874 12.3753 5.91021 12.0238L8.37451 9.55601L10.8402 12.0238C11.1917 12.3753 11.7615 12.3753 12.113 12.0238C12.4645 11.6723 12.4645 11.1025 12.113 10.751L9.64651 8.28201L12.113 5.81402C12.4645 5.46255 12.4645 4.8927 12.113 4.54123C11.7615 4.18976 11.1917 4.18976 10.8402 4.54123Z' fill='%23B6C2DA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_70636_37018-674590'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.374512 0.281006)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    @media (any-hover: hover) {
+        &:hover {
+            background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_70636_37018-540521)'%3E%3Cpath d='M8.37451 0.281006C12.7928 0.281006 16.3745 3.86273 16.3745 8.28101C16.3745 12.6993 12.7928 16.281 8.37451 16.281C3.95623 16.281 0.374512 12.6993 0.374512 8.28101C0.374512 3.86273 3.95623 0.281006 8.37451 0.281006ZM10.8402 4.54123L8.37451 7.00801L5.91021 4.54123C5.55874 4.18976 4.98889 4.18976 4.63742 4.54123C4.28595 4.8927 4.28595 5.46255 4.63742 5.81402L7.10251 8.28201L4.63742 10.751C4.28595 11.1025 4.28595 11.6723 4.63742 12.0238C4.98889 12.3753 5.55874 12.3753 5.91021 12.0238L8.37451 9.55601L10.8402 12.0238C11.1917 12.3753 11.7615 12.3753 12.113 12.0238C12.4645 11.6723 12.4645 11.1025 12.113 10.751L9.64651 8.28201L12.113 5.81402C12.4645 5.46255 12.4645 4.8927 12.113 4.54123C11.7615 4.18976 11.1917 4.18976 10.8402 4.54123Z' fill='%23107EDC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_70636_37018-540521'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.374512 0.281006)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+    }
+}

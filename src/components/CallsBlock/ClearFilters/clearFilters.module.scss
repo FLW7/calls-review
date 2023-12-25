@@ -1,0 +1,22 @@
+.clearFilters {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    &__text {
+        color: var(--text-secondary);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        cursor: default;
+        user-select: none;
+    }
+    &__btn {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-image: url("data:image/svg+xml,%3csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_20502_4968)'%3e%3cpath d='M12.75 3.88125L11.8688 3L8.375 6.49375L4.88125 3L4 3.88125L7.49375 7.375L4 10.8688L4.88125 11.75L8.375 8.25625L11.8688 11.75L12.75 10.8688L9.25625 7.375L12.75 3.88125Z' fill='%23ADBFDF'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_20502_4968'%3e%3crect width='15' height='15' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+        margin-top: 2px;
+    }
+}

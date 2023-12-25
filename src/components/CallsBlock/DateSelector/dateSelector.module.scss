@@ -1,0 +1,85 @@
+.dateSelector {
+    user-select: none;
+    position: relative;
+    &__drop {
+        right: 0;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        &:hover,
+        &.active {
+            .dateSelector__titleIcon {
+                background-image: url("data:image/svg+xml,%3csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.4 1.63636H13.6V0H12V1.63636H4V0H2.4V1.63636H1.6C0.72 1.63636 0 2.37273 0 3.27273V16.3636C0 17.2636 0.72 18 1.6 18H14.4C15.28 18 16 17.2636 16 16.3636V3.27273C16 2.37273 15.28 1.63636 14.4 1.63636ZM14.4 16.3636H1.6V5.72727H14.4V16.3636Z' fill='%23002CFB'/%3e%3c/svg%3e");
+            }
+        }
+    }
+
+    &__titleText {
+        color: var(--UI-accent);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    &__titleIcon {
+        display: block;
+        width: 16px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: 16px 18px;
+        background-image: url("data:image/svg+xml,%3csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.4 1.63636H13.6V0H12V1.63636H4V0H2.4V1.63636H1.6C0.72 1.63636 0 2.37273 0 3.27273V16.3636C0 17.2636 0.72 18 1.6 18H14.4C15.28 18 16 17.2636 16 16.3636V3.27273C16 2.37273 15.28 1.63636 14.4 1.63636ZM14.4 16.3636H1.6V5.72727H14.4V16.3636Z' fill='%23ADBFDF'/%3e%3c/svg%3e");
+        transition: 0.3s all;
+    }
+
+    &__arrowBtnPrev,
+    &__arrowBtnNext {
+        display: block;
+        width: 16px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: 7px 10px;
+        background-image: url("data:image/svg+xml,%3csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.175 8.825L2.35833 5L6.175 1.175L5 0L0 5L5 10L6.175 8.825Z' fill='%23ADBFDF'/%3e%3c/svg%3e");
+        background-position: 0 center;
+        &:hover {
+            background-image: url("data:image/svg+xml,%3csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.175 8.825L2.35833 5L6.175 1.175L5 0L0 5L5 10L6.175 8.825Z' fill='%23002CFB'/%3e%3c/svg%3e");
+        }
+    }
+
+    &__arrowBtnNext {
+        transform: rotate(180deg);
+    }
+
+    &__selected {
+        color: var(--UI-accent);
+    }
+}
+
+.calendarBlock {
+    padding: 0 21px 4px;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--text);
+    }
+
+    &__input {
+        span {
+            border: unset !important;
+            outline: unset !important;
+            outline-width: unset !important;
+            outline-offset: unset !important;
+            margin: 0;
+        }
+    }
+}
